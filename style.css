@@ -1,0 +1,101 @@
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Consolas, monospace; 
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #00ff00;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-top: 4px solid #00ff00;
+}
+
+#main-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00ff00;
+}
+
+
+.box-model-demo {
+    padding: 20px; 
+    border: 2px dashed #00ff00; 
+    margin-bottom: 20px; 
+    
+    background-color: #2a2a2a;
+}
+
+.card {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #252525;
+    border-left: 4px solid #00ff00;
+}
+
+
+.flex-layout {
+    display: flex; 
+    gap: 20px;     
+}
+
+.column {
+    flex: 1; 
+}
+
+
+.card:hover {
+    background-color: #333;
+    transition: 0.3s;
+}
+
+a[href^="mailto:"] {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+a[href^="tel:"] {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.skills-list li:nth-child(even) {
+    color: #00ff00;
+}
+.skills-list li:nth-child(odd) {
+    color: #ffffff;
+}
