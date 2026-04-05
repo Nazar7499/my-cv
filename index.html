@@ -3,36 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>CV - Назарій Панчишин</title>
-    
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .status-badge {
-            background-color: #00ff00;
-            color: #000;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-    </style>
 </head>
 <body>
+
+    <button id="theme-toggle" class="theme-btn">Змінити тему 🌙/☀️</button>
 
     <div class="container">
         
         <header id="main-header">
             <img class="profile-pic" src="C:\Users\nazar\OneDrive\Desktop\lab_2\img\—Pngtree—computer internet hacker_6566760.png" alt="Моє фото">
-            
             <div class="main-info">
                 <h1>Назарій Панчишин</h1>
                 <h2>Junior Pentester</h2>
-                
-                <div class="status-badge" style="border: 2px dashed #000;">
-                    Відкритий до пропозицій
-                </div>
-
                 <div class="contacts">
                     <b>Телефон:</b> <a href="tel:+3809812345678">+380 (98) 123-45-67</a><br>
                     <b>Email:</b> <a href="mailto:example@gmail.com">example@gmail.com</a>
@@ -41,47 +24,63 @@
         </header>
 
         <div class="flex-layout">
-            
             <div class="column left-col">
-                <section class="box-model-demo">
+                <section class="card">
                     <h3>Про себе</h3>
-                    <p>
-                        Навчаюсь у Національному університеті "Львівська політехніка" (Кібербезпека, 2 курс). 
-                        Маю мотивацію отримати практичний досвід у сфері Pentesting.
-                    </p>
+                    <p>Навчаюсь у НУ "Львівська політехніка" (Кібербезпека, 2 курс). Мотивований отримати досвід у Pentesting.</p>
                 </section>
-
                 <section class="card">
                     <h3>Освіта</h3>
                     <ul>
-                        <li><b>НУ "Львівська політехніка"</b> (2024—2028) - Кібербезпека</li>
-                        <li><b>СЗШ</b> (2013—2024) - Повна середня освіта</li>
+                        <li><b>НУ "Львівська політехніка"</b> (2024—2028)</li>
+                        <li><b>СЗШ</b> (2013—2024)</li>
                     </ul>
                 </section>
             </div>
-
             <div class="column right-col">
                 <section class="card">
                     <h3>Навички</h3>
                     <ul class="skills-list">
-                        <li>Python</li>
-                        <li>HTML / CSS</li>
+                        <li>Python, HTML / CSS, JS</li>
                         <li>Аналіз вразливостей</li>
-                        <li>Швидке навчання</li>
-                    </ul>
-                </section>
-
-                <section class="card">
-                    <h3>Мови</h3>
-                    <ul>
-                        <li>Українська — рідна</li>
-                        <li>Англійська — B1</li>
                     </ul>
                 </section>
             </div>
+        </div>
 
+        <section class="card">
+            <h3>Відгуки попередніх роботодавців</h3>
+            <div id="comments-container">Завантаження відгуків...</div>
+        </section>
+
+    </div>
+
+    <footer id="footer-info"></footer>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Залиште свої контакти</h2>
+            
+            <form action="https://formspree.io/f/maqllvpp" method="POST">
+                <label>Ім'я:</label>
+                <input type="text" name="name" required>
+                
+                <label>Email:</label>
+                <input type="email" name="email" required>
+                
+                <label>Телефон:</label>
+                <input type="tel" name="phone" required>
+                
+                <label>Ваше повідомлення:</label>
+                <textarea name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="submit-btn">Відправити</button>
+            </form>
         </div>
     </div>
 
+    <!-- Підключаємо JavaScript файл -->
+    <script src="script.js"></script>
 </body>
 </html>
